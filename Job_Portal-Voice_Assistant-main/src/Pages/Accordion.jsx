@@ -30,7 +30,7 @@ const accordionData = [
   },
   ,
   {
-    title: 'How to get started',
+    title: 'How to get started!',
     content: `
     The process begins with users signing up or logging in to access personalized features. They enter personal details and upload resumes, enhancing their profiles. Using an intuitive interface, they filter job listings based on preferences. Leveraging advanced algorithms, the platform matches users with relevant job openings and companies. Users can then send resumes directly to targeted companies, receiving confirmation notifications. Feedback mechanisms and comprehensive support ensure a streamlined job search experience.`
   }

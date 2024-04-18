@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaEnvelope, FaFacebook, FaGoogle } from 'react-icons/fa6';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -32,7 +33,7 @@ const LoginPage = () => {
   return (
     <div style={styles.container}>
       <div style={styles.formContainer}>
-        <h2 style={styles.heading}>Sign Up</h2>
+        <h3 style={styles.heading}>Login</h3>
         {error && <div style={styles.error}>{error}</div>}
         {successMessage && <div style={styles.success}>{successMessage}</div>}
         <form onSubmit={handleSignup}>
@@ -65,6 +66,16 @@ const LoginPage = () => {
           <button style={styles.button} type="submit">
             Sign Up
           </button>
+
+          <div style={{ marginTop: '10px', textAlign: 'center' }}>
+            <a href="/forgot-password" style={{ textDecoration: 'underline' }}>Forgot Password?</a>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+            <FaGoogle style={{ fontSize: '24px', marginRight: '10px', cursor: 'pointer', color: '#DB4437' }} />
+            <FaFacebook style={{ fontSize: '24px', marginRight: '10px', cursor: 'pointer', color: '#1877F2' }} />
+            <FaEnvelope style={{ fontSize: '24px', cursor: 'pointer', color: '#636363' }} />
+          </div>
         </form>
       </div>
     </div>

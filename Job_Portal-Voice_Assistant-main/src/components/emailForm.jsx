@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import LoadingBar from './LoadingBar';
 
 const EmailForm = () => {
   const [formData, setFormData] = useState({

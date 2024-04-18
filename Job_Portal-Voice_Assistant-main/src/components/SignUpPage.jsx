@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { FaEnvelope, FaFacebook, FaGoogle } from 'react-icons/fa6';
 
 const SignupPage = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [error, setError] = useState('');
@@ -22,11 +22,11 @@ const SignupPage = () => {
     setError('');
     // Simulate signup process (you would replace this with your actual signup logic)
     const formData = {
-      fname : firstName,
-      lname : lastName,
-      email : email,
-      phonenum : phone,
-      pass : password
+      fname: firstName,
+      lname: lastName,
+      email: email,
+      phonenum: phone,
+      pass: password
     }
 
     fetch('http://localhost:5000/api/signup', {
@@ -49,7 +49,7 @@ const SignupPage = () => {
       .catch(error => {
         console.error('Error submitting form:', error);
       });
-      
+
     setTimeout(() => {
       setSuccessMessage('Signup successful!');
     }, 1000);
@@ -64,32 +64,17 @@ const SignupPage = () => {
         <form onSubmit={handleSignup}>
 
           <div style={styles.inputGroup}>
-            <label style={styles.label} htmlFor="firstName">
-              First Name
+            <label style={styles.label} htmlFor="fullName">
+              Full Name
             </label>
             <input
               required
               style={styles.input}
-              id="firstName"
+              id="fullName"
               type="text"
-              placeholder="Enter your first name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-
-          <div style={styles.inputGroup}>
-            <label style={styles.label} htmlFor="lastName">
-              Last Name
-            </label>
-            <input
-              required
-              style={styles.input}
-              id="lastName"
-              type="text"
-              placeholder="Enter your last name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              placeholder="Enter your full name"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
             />
           </div>
 
@@ -123,7 +108,7 @@ const SignupPage = () => {
               onChange={(e) => setPhone(e.target.value)}
             />
           </div>
-         
+
           <div style={styles.inputGroup}>
             <label style={styles.label} htmlFor="phone">
               Password
@@ -142,6 +127,12 @@ const SignupPage = () => {
           <button style={styles.button} type="submit">
             Sign Up
           </button>
+          {/* Icon buttons */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+            <FaGoogle style={{ fontSize: '24px', marginRight: '10px', cursor: 'pointer', color: '#DB4437' }} />
+            <FaFacebook style={{ fontSize: '24px', marginRight: '10px', cursor: 'pointer', color: '#1877F2' }} />
+            <FaEnvelope style={{ fontSize: '24px', cursor: 'pointer', color: '#636363' }} />
+          </div>
         </form>
       </div>
     </div>
@@ -150,7 +141,8 @@ const SignupPage = () => {
 
 const styles = {
   container: {
-    display: 'flex',
+
+    display: 'flex', flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
