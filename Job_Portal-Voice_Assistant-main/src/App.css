@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.active {
+  color: #3575E2;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btns {
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323232;
+  cursor: pointer;
+}
+
+/* jobs page */
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.sidebar-items {
+  margin-top: 20px;
+}
+
+.sidebar-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.all {
+  background: linear-gradient(blue, crimson);
+}
+
+.sidebar-label-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.sidebar-label-container input:checked~.checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked~.checkmark:after {
+  display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+  top: 6.4px;
+  left: 6.4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.line {
+  margin-top: 3rem;
+  border-color: #f7f7f7;
+}
+
+
+
+/* create a job page */
+
+.create-job-flex {
+  @apply flex flex-col lg:flex-row items-center justify-between gap-8;
+}
+
+.create-job-input {
+  @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6
+}
+
+.location-options-container {
+  max-height: 200px;
+  /* Set the maximum height of the container */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.location-options {
+  padding-right: 20px;
+  /* Add some padding to prevent content from overlapping the scrollbar */
+}
+
+
+.salary-options-container {
+  max-height: 200px;
+  /* Set the maximum height of the container */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.salary-options {
+  padding-right: 20px;
+  /* Add some padding to prevent content from overlapping the scrollbar */
+}
+
+
+
+/* Accordion CSS */
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 60px auto ;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  color: #333;
+}
+
+.accordion-title div {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.accordion-content {
+  padding: 1rem 0;
+  color: #666;
+}
+.accordian h1{
+  text-align: center;
+  font-weight: 900;
+  font-size: xx-large;
+  margin-top: 30px;
+}
+
+
+
+/* Virtual AI Assitance */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .image-container {
+  padding: 10px;
+}
+
+.main .image-container .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .image-container .image img {
+  width: 350px;
+  align-items: center;
+}
+
+
+.main .image-container h1 {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.main .image-container p {
+  color: #324042;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 50px;
+  border-radius: 20px;
+  background: rgb(202 253 255 / 50%);
+}
+
+.main .input .talk {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.main .input .talk i {
+  font-size: 20px;
+  color: #aed0d0;
+}
+
+.main .input .content {
+  color: #f8fbfb;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+
+
+/* Footer CSS */
+.footer {
+  margin-top: 7pc;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.footer__col span{
+  margin-top: 2px;
+  font-size: large;
+}
+
+.footer__col h3 {
+  margin-bottom: 20px;
+}
+
+.footer__col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__col ul li {
+  margin-bottom: 10px;
+}
+
+.footer__col ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.image-gallery {
+
+  max-width: 1000px;
+  margin: 10px auto;
+}
+.image-gallery h1{
+  
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.image-gallery__row {
+  margin-top: 10px;
+  display: flex;
+}
+
+.image-gallery__image {
+  width: 33.33%; /* Each image takes up 1/3 of the row */
+  max-width: 100%;
+  height: auto;
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+  background-color: blue; /* Light blue background color */
+  color: white; /* White text color */
+}
+
