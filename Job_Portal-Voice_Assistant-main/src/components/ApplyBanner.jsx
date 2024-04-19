@@ -20,48 +20,23 @@ const ApplyBanner = ({ query, handleInputChange }) => {
                 sector will help us to grow ahead!
             </p>
 
-            <form>
-                <div className="flex justify-start md:flex-row flex-col md:gap-0 gap-4">
-                    <div className="flex md:rounded-s-none rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within-ring-inset focus-within:ring-indigo-600 md:w-1/2 w-full relative">
-                        <input
-                            type="text"
-                            name="jobTitle"
-                            id="jobTitle"
-                            placeholder="Which Job-role are you looking for ?"
-                            className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-grey-900 placeholder:text-grey-400 
-      focus:right-0 sm:text-sm sm:leading-6"
-                            onChange={handleInputChange}
-                            value={query}
-                        />
-                        <FiSearch className="absolute mt-2.5 ml-2 text-grey-400" />
-                        <FaMicrophone
-                            className={`absolute top-1/2 right-2 transform -translate-y-1/2 text-${isListening ? 'blue' : 'black'} cursor-pointer`}
-                            onClick={toggleListening}
-                        />
-                    </div>
-                    <div className="flex md:rounded-s-none rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within-ring-inset focus-within:ring-indigo-600 md:w-1/3 w-full relative">
-                        <input
-                            type="text"
-                            name="jobLocation"
-                            id="jobLocation"
-                            placeholder="Location"
-                            className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-grey-900 placeholder:text-grey-400 
-      focus:right-0 sm:text-sm sm:leading-6"
-                        />
-                        <FiMapPin className="absolute mt-2.5 ml-2 text-grey-400" />
-                        <FaMicrophone
-                            className={`absolute top-1/2 right-2 transform -translate-y-1/2 text-${isListening ? 'blue' : 'black'} cursor-pointer`}
-                            onClick={toggleListening}
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        className="bg-black py-2 px-8 text-white md:rounded-s-none rounded self-end"
-                    >
-                        Search
-                    </button>
-                </div>
-            </form>
+            <div className="flex rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within-ring-inset focus-within:ring-indigo-600 w-full relative">
+    <input
+        type="text"
+        name="searchQuery"
+        id="searchQuery"
+        placeholder="Search..."
+        className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-grey-900 placeholder:text-grey-400 focus:right-0 sm:text-sm sm:leading-6"
+        onChange={handleInputChange}
+        value={query}
+    />
+    <FiSearch className="absolute mt-2.5 ml-2 text-grey-400" />
+    <FaMicrophone
+        className={`absolute top-1/2 right-2 transform -translate-y-1/2 text-${isListening ? 'blue' : 'black'} cursor-pointer`}
+        onClick={toggleListening}
+    />
+</div>
+
             <EmailForm></EmailForm>
         </div>
     )

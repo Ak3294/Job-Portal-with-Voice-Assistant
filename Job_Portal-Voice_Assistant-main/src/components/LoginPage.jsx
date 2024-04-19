@@ -26,7 +26,7 @@ const LoginPage = () => {
     setError('');
     // Simulate signup process (you would replace this with your actual signup logic)
     setTimeout(() => {
-      setSuccessMessage('Signup successful!');
+      setSuccessMessage('Login Successful!');
     }, 1000);
   };
 

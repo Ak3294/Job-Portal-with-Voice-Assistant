@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaFacebook, FaGoogle } from 'react-icons/fa6';
 
+
 const SignupPage = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -22,8 +23,7 @@ const SignupPage = () => {
     setError('');
     // Simulate signup process (you would replace this with your actual signup logic)
     const formData = {
-      fname: firstName,
-      lname: lastName,
+      fname: fullName,
       email: email,
       phonenum: phone,
       pass: password
@@ -51,7 +51,7 @@ const SignupPage = () => {
       });
 
     setTimeout(() => {
-      setSuccessMessage('Signup successful!');
+      setSuccessMessage('Signup Successfull Please login!');
     }, 1000);
   };
 

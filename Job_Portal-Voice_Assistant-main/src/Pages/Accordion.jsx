@@ -1,14 +1,11 @@
 import React from 'react';
 import AccordionD from './accordianD';
 import "../App"
-import { FaAlignCenter } from 'react-icons/fa6';
 
 const accordionData = [
   {
     title: 'Our Team',
-    content: `
-    At Acube, our team embodies expertise and dedication. Akshat Sharma leads development, pioneering innovation and technical excellence. Akshay Kumar Hiran oversees operations, ensuring seamless functionality and top-tier service delivery. Aditya Singh Chouhan spearheads PR and communication efforts, crafting compelling narratives and nurturing relationships. Together, they form a cohesive unit, driving our company forward with a shared commitment to excellence. Their collective skills and unwavering dedication play pivotal roles in shaping our future, fostering growth, and delivering value to our users and partners alike.
-    `
+    content: "At Acube, our team embodies expertise and dedication. Akshat Sharma leads development, pioneering innovation and technical excellence. Akshay Kumar Hiran oversees operations, ensuring seamless functionality and top-tier service delivery. Aditya Singh Chouhan spearheads PR and communication efforts, crafting compelling narratives and nurturing relationships. Together, they form a cohesive unit, driving our company forward with a shared commitment to excellence. Their collective skills and unwavering dedication play pivotal roles in shaping our future, fostering growth, and delivering value to our users and partners alike."
   },
   {
     title: 'Our Values',
