@@ -91,15 +91,6 @@ const EmailForm = () => {
           <label style={styles.labelHorizontal}>Phone:</label>
           <input type="tel" name="phone" value={formData.phone} onChange={handleChange} style={styles.inputHorizontal} />
         </div>
-        {/* <div style={styles.formGroupHorizontal}>
-          <label style={styles.labelHorizontal}>Resume:</label>
-          <input type="file" name="resume" onChange={handleFileChange} style={styles.inputHorizontal} />
-        </div> */}
-        
-        {/* <div style={styles.formGroupHorizontal}>
-          <label style={styles.labelHorizontal}>Education:</label>
-          <textarea name="education" value={formData.education} onChange={handleChange} style={styles.textareaHorizontal} />
-      </div> */}
       
         <div style={styles.formGroupHorizontal}>
           <label style={styles.labelHorizontal}>Query:</label>
