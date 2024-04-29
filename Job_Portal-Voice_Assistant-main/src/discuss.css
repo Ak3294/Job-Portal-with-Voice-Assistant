@@ -1,0 +1,120 @@
+.comment-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .comment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    margin-bottom: 20px;
+  }
+  
+  .comment-content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .comment-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .comment-timestamp {
+    color: #777;
+  }
+  
+  .comment-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .reply-section button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .comment-actions button:focus {
+    outline: none;
+  }
+  
+  .comment-actions button:hover {
+    color: #007bff;
+  }
+  
+  .comment-actions button:hover svg {
+    fill: #007bff;
+  }
+  .reply-section button:hover{
+    fill: #007bff;
+  }
+  .reply-section button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .comment-actions button svg {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+  }
+  
+  .reply-section {
+    margin-top: 10px;
+  }
+  
+  .comment-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0px; /* Add margin to create space between input and button */
+    height: 70px;
+  }
+  
+  
+  .comment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .reply-list {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .reply-item {
+    margin-bottom: 10px;
+  }
+  .heading h1{
+    margin-top:20px ;
+    margin-bottom: 4.3rem;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  
+  

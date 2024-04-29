@@ -1,9 +1,10 @@
 import React from "react";
+import "../App";
 
 const Footer = () => {
     return (
                 
-        <footer class="bg-white dark:bg-grey-900 mt-10">
+        <footer class="bg-white dark:bg-grey-900 mt-10 footer">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 grey-bg">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
@@ -24,7 +25,7 @@ const Footer = () => {
                                 />
                                 <circle cx="16.9857" cy="17.4857" r="12.0143" fill="#3575E2" />
                             </svg>
-                            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-2 mt-1">JobSearch</span>
+                            <span class="self-center text-2xl font-semibold whitespace-nowrap ml-3 mt-1">JobSearch</span>
                         </a>
                         <p class="mt-3 ml-10">Acube: A premier middleware platform linking talented individuals to outstanding job
                             <br></br>
@@ -36,7 +37,7 @@ const Footer = () => {
                     </div>
                     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Projects</h2>
+                            <h2 class="mb-6 text-sm font-semibold uppercase">Projects</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
                                     <a href="/" class="hover:underline">Website</a>
@@ -47,7 +48,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                            <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
                                     <a href="https://github.com" class="hover:underline ">Github</a>
@@ -58,7 +59,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                            <h2 class="mb-6 text-sm font-semibold uppercase">Legal</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
                                     <a href="/" class="hover:underline">Privacy Policy</a>

@@ -7,6 +7,7 @@ import Assistance from "../Pages/Assistance";
 import ApplyNow from "../Pages/ApplyNow";
 import LoginPage from "../components/LoginPage";
 import SignupPage from "../components/SignUpPage";
+import DiscussionBox from "../components/DiscussionBox";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +19,9 @@ const router = createBrowserRouter([
       { path: "/assistance", element: <Assistance/> },
       { path: "/contactus", element: <Contact /> },
       { path: "/login" , element:<LoginPage/>},
-      { path: "/signup" , element:<SignupPage/>}
+      { path: "/signup" , element:<SignupPage/>},
+      { path: "/Discuss" , element:<DiscussionBox/>}
+
     ],
   },
 ]);

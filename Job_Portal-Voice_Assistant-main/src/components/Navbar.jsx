@@ -14,6 +14,7 @@ const Navbar = () => {
     { path: "/applynow", title: "Apply Now" },
     { path: "/about", title: "About" },
     { path: "/assistance", title: "AI Help" },
+    { path: "/Discuss", title: "Discuss" },
     { path: "/contactus", title: "Contact-Us" },
   ];
   return (

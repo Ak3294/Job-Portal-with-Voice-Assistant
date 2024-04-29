@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMapPin, FiSearch } from "react-icons/fi";
 import { FaMicrophone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Banner = ({ query, handleInputChange }) => {
   const [isListening, setIsListening] = useState(false);
@@ -34,10 +35,15 @@ const Banner = ({ query, handleInputChange }) => {
               value={query}
             />
             <FiSearch className="absolute mt-2.5 ml-2 text-grey-400" />
-            <FaMicrophone
-              className={`absolute top-1/2 right-2 transform -translate-y-1/2 text-${isListening ? 'blue' : 'black'} cursor-pointer`}
-              onClick={toggleListening}
-            />
+            <Link
+              to="/assistance"
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 cursor-pointer"
+            >
+              <FaMicrophone
+                className={`text-${isListening ? "blue" : "black"}`}
+                onClick={toggleListening}
+              />
+            </Link>
           </div>
           <div className="flex md:rounded-s-none rounded shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within-ring-inset focus-within:ring-indigo-600 md:w-1/3 w-full relative">
             <input
@@ -49,10 +55,15 @@ const Banner = ({ query, handleInputChange }) => {
         focus:right-0 sm:text-sm sm:leading-6"
             />
             <FiMapPin className="absolute mt-2.5 ml-2 text-grey-400" />
-            <FaMicrophone
-              className={`absolute top-1/2 right-2 transform -translate-y-1/2 text-${isListening ? 'blue' : 'black'} cursor-pointer`}
-              onClick={toggleListening}
-            />
+            <Link
+              to="/assistance"
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 cursor-pointer"
+            >
+              <FaMicrophone
+                className={`text-${isListening ? "blue" : "black"}`}
+                onClick={toggleListening}
+              />
+            </Link>
           </div>
           <button
             type="submit"
